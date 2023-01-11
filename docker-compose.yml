@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  metadata_app:
+    build: ./app
+    image: streamlitapp:latest
+    container_name: creditapp
+    ports:
+      - "8502:8502"
+
+    tty: true
