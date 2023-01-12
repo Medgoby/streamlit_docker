@@ -17,6 +17,8 @@ services:
       - "traefik.port=80"
 networks:
   traefik:
+    external:
+      name: traefik_webgateway
     
 
   
